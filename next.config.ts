@@ -16,8 +16,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  // 图片配置
-
   // 自定义webpack配置
   webpack: (config, { isServer }) => {
     if (!isServer) {
@@ -30,9 +28,6 @@ const nextConfig: NextConfig = {
         minSize: 20000,
         maxSize: 240000, // 降低最大块大小以更好地分割代码
       };
-
-      // 添加路由优化
-      config.optimization.runtimeChunk = 'single';
     }
     return config;
   },

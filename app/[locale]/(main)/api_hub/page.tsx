@@ -21,6 +21,6 @@ export async function generateMetadata({
   };
 }
 
-export default function ApiHubPage() {
+export default async function ApiHubPage() {
   return <div>ApiHubPage</div>;
 }

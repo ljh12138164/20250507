@@ -1,9 +1,9 @@
 {
   "nav": {
     "pricing": "定价",
-    "chrome_extension": "Chrome 扩展程序",
+    "chrome_extension": "Chrome扩展插件",
     "use_cases": "用例",
-    "api_hub": "API 中心",
+    "api_hub": "API中心",
     "get_started": "开始",
     "toggle_menu": "切换菜单"
   },
@@ -15,29 +15,63 @@
   },
   "rotate": {
     "title": "旋转PDF页面",
-    "description": "只需点击页面即可旋转。然后，您就可以下载修改后的PDF。",
-    "dropzone": "单击上传或拖放",
+    "description": "只需点击页面即可旋转。然后，您可以下载修改后的PDF。",
+    "dropzone": "点击上传或拖放文件",
     "meta_title": "在线旋转PDF页面",
-    "meta_description": "使用PDF.ai免费在线旋转PDF页面。轻松调整页面方向并即时保存修改后的文档。"
+    "meta_description": "使用PDF.ai免费在线旋转PDF页面。轻松调整页面方向并立即保存修改后的文档。",
+    "download": "下载",
+    "rotate_all": "旋转全部",
+    "delete_pdf": "删除pdf",
+    "delete_pdf_tooltip": "删除此pdf并选择新的pdf",
+    "zoom_out_tooltip": "缩小",
+    "zoom_in_tooltip": "放大"
   },
+  "toggle_menu": "切换菜单",
   "pricing": {
-    "meta_title": "PDF工具定价方案",
-    "meta_description": "探索PDF.ai工具的实惠定价方案。为您的文档处理需求选择合适的方案，从个人用户到企业用户。"
+    "meta_title": "PDF工具价格方案",
+    "meta_description": "探索我们经济实惠的PDF.ai工具价格方案。为您的文档处理需求选择合适的方案，从个人用户到企业用户。"
   },
   "get_started": {
     "meta_title": "开始使用PDF.ai",
-    "meta_description": "立即开始使用PDF.ai强大的文档工具。了解如何使用我们易于使用的平台处理、分析和转换您的PDF文件。"
+    "meta_description": "立即开始使用PDF.ai强大的文档工具。了解如何使用我们简单易用的平台处理、分析和转换您的PDF文件。"
   },
   "api_hub": {
     "meta_title": "PDF.ai API中心",
-    "meta_description": "访问PDF.ai强大的文档处理API。通过我们面向开发者的API文档，将PDF工具集成到您的应用程序中。"
+    "meta_description": "访问PDF.ai强大的文档处理API。通过我们对开发者友好的API文档，将PDF工具集成到您的应用程序中。"
   },
   "use_cases": {
-    "meta_title": "PDF.ai使用案例",
-    "meta_description": "了解PDF.ai如何解决您的文档处理挑战。探索我们强大的PDF工具的实际应用。"
+    "meta_title": "PDF.ai使用场景",
+    "meta_description": "了解PDF.ai如何解决您的文档处理挑战。探索我们强大PDF工具的实际应用案例。"
   },
   "chrome_extension": {
-    "meta_title": "PDF.ai Chrome扩展程序",
-    "meta_description": "使用我们的Chrome扩展程序直接在浏览器中处理PDF。轻松旋转、注释和提取PDF文档中的信息。"
+    "meta_title": "PDF.ai Chrome扩展",
+    "meta_description": "使用我们的Chrome扩展直接在浏览器中处理PDF。轻松旋转、注释和从PDF文档中提取信息。"
+  },
+  "footer": {
+    "chat_with_pdf": "与任何PDF对话：提问、获取摘要、查找信息等。",
+    "products": "产品",
+    "video_tutorials": "视频教程",
+    "resources": "资源",
+    "blog": "博客",
+    "faq": "常见问题",
+    "we_also_built": "我们还开发了",
+    "resume_ai_scanner": "简历AI扫描器",
+    "invoice_ai_scanner": "发票AI扫描器",
+    "ai_quiz_generator": "AI测验生成器",
+    "quicky_ai": "QuickyAI",
+    "doctrines": "Doctrines",
+    "pdf_gpt": "PDF GPT",
+    "pdf_ai_generator": "PDF AI生成器",
+    "other_pdf_tools": "其他PDF工具",
+    "company": "公司",
+    "vs_chatpdf": "PDF.ai对比ChatPDF",
+    "vs_acrobat": "PDF.ai对比Acrobat Reader",
+    "legal": "法律声明",
+    "affiliate_program": "联盟计划 💵",
+    "investors": "投资者",
+    "use_cases": "使用场景",
+    "chrome_extension": "Chrome扩展",
+    "api_hub": "API中心",
+    "pricing": "价格"
   }
-} 
+}

@@ -21,6 +21,6 @@ export async function generateMetadata({
   };
 }
 
-export default function GetStartedPage() {
+export default async function GetStartedPage() {
   return <div>GetStartedPage</div>;
 }

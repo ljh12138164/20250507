@@ -1,13 +1,8 @@
 import { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'use_cases' });
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('use_cases');
 
   return {
     title: `${t('meta_title')} | PDF.ai`,
@@ -18,16 +13,9 @@ export async function generateMetadata({
       'PDF.ai applications',
       'document workflows',
     ],
-    alternates: {
-      canonical: `https://pdf.ai/use_cases`,
-      languages: {
-        en: 'https://pdf.ai/en/use_cases',
-        zh: 'https://pdf.ai/zh/use_cases',
-      },
-    },
   };
 }
 
-export default function UseCasesPage() {
+export default async function UseCasesPage() {
   return <div>UseCasesPage</div>;
 }

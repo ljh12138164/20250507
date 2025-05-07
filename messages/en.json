@@ -18,7 +18,13 @@
     "description": "Just click on the page to rotate it. Then, you can download the modified PDF.",
     "dropzone": "Click to upload or drag and drop",
     "meta_title": "Rotate PDF Pages Online",
-    "meta_description": "Rotate PDF pages online for free with PDF.ai. Easily adjust page orientation and save your modified document instantly."
+    "meta_description": "Rotate PDF pages online for free with PDF.ai. Easily adjust page orientation and save your modified document instantly.",
+    "download": "download",
+    "rotate_all": "Rotate all",
+    "delete_pdf": "Remove pdf",
+    "zoom_in_tooltip": "Zoom in",
+    "zoom_out_tooltip": "Zoom out",
+    "delete_pdf_tooltip": "Remove the pdf and selete a new one"
   },
   "toggle_menu": "Toggle menu",
   "pricing": {
@@ -40,5 +46,32 @@
   "chrome_extension": {
     "meta_title": "PDF.ai Chrome Extension",
     "meta_description": "Process PDFs directly in your browser with our Chrome extension. Easily rotate, annotate, and extract information from PDF documents."
+  },
+  "footer": {
+    "chat_with_pdf": "Chat with any PDF: ask questions, get summaries, find information and more.",
+    "products": "Products",
+    "video_tutorials": "Video Tutorials",
+    "resources": "Resources",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "we_also_built": "We Also Built",
+    "resume_ai_scanner": "Resume AI Scanner",
+    "invoice_ai_scanner": "Invoice AI Scanner",
+    "ai_quiz_generator": "AI Quiz Generator",
+    "quicky_ai": "QuickyAI",
+    "doctrines": "Doctrines",
+    "pdf_gpt": "PDF GPT",
+    "pdf_ai_generator": "PDF AI Generator",
+    "other_pdf_tools": "Other PDF Tools",
+    "company": "Company",
+    "vs_chatpdf": "PDF.ai vs ChatPDF",
+    "vs_acrobat": "PDF.ai vs Acrobat Reader",
+    "legal": "Legal",
+    "affiliate_program": "Affiliate Program 💵",
+    "investors": "Investors",
+    "use_cases": "Use cases",
+    "chrome_extension": "Chrome extension",
+    "api_hub": "Api Hub",
+    "pricing": "Pricing"
   }
 }

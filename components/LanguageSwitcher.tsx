@@ -16,8 +16,8 @@ export function LanguageSwitcher() {
   const locale = useLocale();
 
   const languages = [
-    { code: 'en', name: 'English', countryCode: 'us' },
-    { code: 'zh', name: '简体中文', countryCode: 'cn' },
+    { code: 'en', name: 'EN', countryCode: 'us', key: 'English' },
+    { code: 'zh', name: 'ZH-CN', countryCode: 'cn', key: 'Chinese' },
   ];
 
   const currentLanguage =
@@ -29,13 +29,13 @@ export function LanguageSwitcher() {
         <Button
           variant='ghost'
           size='sm'
-          className='flex items-center gap-1 h-8 px-2'
+          className='flex items-center gap-1 h-8 '
         >
           <CircleFlag
             countryCode={currentLanguage.countryCode}
-            height={20}
-            width={20}
-            className='h-4 w-4'
+            height={24}
+            width={24}
+            className='h-[24px] w-[24px]'
           />
           <span className='font-medium'>{currentLanguage.name}</span>
           <ChevronDown className='h-4 w-4' />
@@ -57,7 +57,7 @@ export function LanguageSwitcher() {
                 width={20}
                 className='mr-2 h-4 w-4'
               />
-              {language.name}
+              {language.key}
             </Link>
           </DropdownMenuItem>
         ))}

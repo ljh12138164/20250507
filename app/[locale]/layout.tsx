@@ -1,10 +1,10 @@
-import Nav from '@/containers/home/nav';
-import Footer from '@/components/Footer';
+import Footer from '@/components/home/Footer';
+import Nav from '@/components/home/Nav';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, getTranslations } from 'next-intl/server';
-import localFont from 'next/font/local';
+import { getMessages } from 'next-intl/server';
 import { Inter, Noto_Sans_SC } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 
 const tiempos = localFont({
@@ -41,18 +41,17 @@ export default async function RootLayout({
 }>) {
   const { locale } = await params;
   const messages = await getMessages({ locale });
-
   return (
     <html lang={locale}>
       <body
-        className={`${tiempos.variable} ${inter.variable} ${notoSansSC.variable} antialiased font-serif `}
+        className={`${tiempos.variable} ${inter.variable} ${notoSansSC.variable} antialiased [font-family:var(--font-tiempos),var(--font-noto-sans-sc),var(--font-inter),"Segoe_UI","Helvetica_Neue",sans-serif] `}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Nav />
           <main className='bg-[rgb(247,245,238)] min-h-[calc(100vh-64px)]'>
             {children}
           </main>
-          <Footer />
+          <Footer locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>

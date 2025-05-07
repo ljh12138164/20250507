@@ -18,16 +18,9 @@ export async function generateMetadata({
       'PDF processor extension',
       'document browser plugin',
     ],
-    alternates: {
-      canonical: `https://pdf.ai/chrome_extension`,
-      languages: {
-        en: 'https://pdf.ai/en/chrome_extension',
-        zh: 'https://pdf.ai/zh/chrome_extension',
-      },
-    },
   };
 }
 
-export default function ChromeExtensionPage() {
+export default async function ChromeExtensionPage() {
   return <div>ChromeExtensionPage</div>;
 }
