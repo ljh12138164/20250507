@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "pricing": "定价",
+    "chrome_extension": "Chrome 扩展程序",
+    "use_cases": "用例",
+    "api_hub": "API 中心",
+    "get_started": "开始",
+    "toggle_menu": "切换菜单"
+  },
+  "home": {
+    "title": "PDF.ai",
+    "description": "PDF旋转工具",
+    "meta_title": "AI驱动的文档助手",
+    "meta_description": "PDF.ai提供智能文档处理工具，帮助您轻松高效地分析、旋转和转换PDF文件。"
+  },
+  "rotate": {
+    "title": "旋转PDF页面",
+    "description": "只需点击页面即可旋转。然后，您就可以下载修改后的PDF。",
+    "dropzone": "单击上传或拖放",
+    "meta_title": "在线旋转PDF页面",
+    "meta_description": "使用PDF.ai免费在线旋转PDF页面。轻松调整页面方向并即时保存修改后的文档。"
+  },
+  "pricing": {
+    "meta_title": "PDF工具定价方案",
+    "meta_description": "探索PDF.ai工具的实惠定价方案。为您的文档处理需求选择合适的方案，从个人用户到企业用户。"
+  },
+  "get_started": {
+    "meta_title": "开始使用PDF.ai",
+    "meta_description": "立即开始使用PDF.ai强大的文档工具。了解如何使用我们易于使用的平台处理、分析和转换您的PDF文件。"
+  },
+  "api_hub": {
+    "meta_title": "PDF.ai API中心",
+    "meta_description": "访问PDF.ai强大的文档处理API。通过我们面向开发者的API文档，将PDF工具集成到您的应用程序中。"
+  },
+  "use_cases": {
+    "meta_title": "PDF.ai使用案例",
+    "meta_description": "了解PDF.ai如何解决您的文档处理挑战。探索我们强大的PDF工具的实际应用。"
+  },
+  "chrome_extension": {
+    "meta_title": "PDF.ai Chrome扩展程序",
+    "meta_description": "使用我们的Chrome扩展程序直接在浏览器中处理PDF。轻松旋转、注释和提取PDF文档中的信息。"
+  }
+} 

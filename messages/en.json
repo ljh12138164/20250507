@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "pricing": "Pricing",
+    "chrome_extension": "Chrome extension",
+    "use_cases": "Use cases",
+    "api_hub": "API Hub",
+    "get_started": "Get started",
+    "toggle_menu": "Toggle menu"
+  },
+  "home": {
+    "title": "PDF.ai",
+    "description": "PDF rotation tool",
+    "meta_title": "AI Powered Document Assistant",
+    "meta_description": "PDF.ai offers intelligent document processing tools to help you analyze, rotate, and transform PDF files with ease and efficiency."
+  },
+  "rotate": {
+    "title": "Rotate PDF Pages",
+    "description": "Just click on the page to rotate it. Then, you can download the modified PDF.",
+    "dropzone": "Click to upload or drag and drop",
+    "meta_title": "Rotate PDF Pages Online",
+    "meta_description": "Rotate PDF pages online for free with PDF.ai. Easily adjust page orientation and save your modified document instantly."
+  },
+  "toggle_menu": "Toggle menu",
+  "pricing": {
+    "meta_title": "Pricing Plans for PDF Tools",
+    "meta_description": "Explore our affordable pricing plans for PDF.ai tools. Choose the right plan for your document processing needs, from individual users to enterprises."
+  },
+  "get_started": {
+    "meta_title": "Get Started with PDF.ai",
+    "meta_description": "Start using PDF.ai's powerful document tools today. Learn how to process, analyze, and transform your PDFs with our easy-to-use platform."
+  },
+  "api_hub": {
+    "meta_title": "PDF.ai API Hub",
+    "meta_description": "Access PDF.ai's powerful document processing APIs. Integrate PDF tools into your applications with our developer-friendly API documentation."
+  },
+  "use_cases": {
+    "meta_title": "PDF.ai Use Cases",
+    "meta_description": "Discover how PDF.ai can solve your document processing challenges. Explore real-world applications for our powerful PDF tools."
+  },
+  "chrome_extension": {
+    "meta_title": "PDF.ai Chrome Extension",
+    "meta_description": "Process PDFs directly in your browser with our Chrome extension. Easily rotate, annotate, and extract information from PDF documents."
+  }
+}

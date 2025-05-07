@@ -1,33 +1,22 @@
 import type { NextConfig } from 'next';
-let nextConfig: NextConfig;
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
 
 // 生产环境打包优化
 const isProd = process.env.NODE_ENV === 'production';
-nextConfig = {
-  // 图片配置
-  images: {
-    remotePatterns: [
+
+const nextConfig: NextConfig = {
+  // 防止重定向
+  async rewrites() {
+    return [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        source: '/pdf.worker.min.mjs',
+        destination: '/pdf.worker.min.mjs',
       },
-      {
-        protocol: 'https',
-        hostname: 'joxicbgouobvvfdxavbc.supabase.co',
-      },
-      {
-        protocol: 'https',
-        hostname: 'osdawghfaoyysblfsexp.supabase.co',
-      },
-      {
-        protocol: 'https',
-        hostname: 'challenges.cloudflare.com',
-      },
-    ],
-    minimumCacheTTL: 60,
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    ];
   },
+  // 图片配置
 
   // 自定义webpack配置
   webpack: (config, { isServer }) => {
@@ -61,7 +50,13 @@ nextConfig = {
     reactCompiler: true,
     // 使用 lightningcss 优化 CSS
     mdxRs: true, // 使用 Rust 编译 MDX
+    turbo: {
+      resolveAlias: {
+        canvas: './empty-module.ts',
+      },
+    },
   },
+
   headers: async () => {
     return [
       {
@@ -78,4 +73,5 @@ nextConfig = {
     ];
   },
 };
-export default nextConfig;
+
+export default withNextIntl(nextConfig);
