@@ -19,7 +19,7 @@ export default function Nav() {
     { name: t('pricing'), key: 'pricing' },
     { name: t('chrome_extension'), key: 'chrome_extension' },
     { name: t('use_cases'), key: 'use_cases' },
-    { name: t('api_hub'), key: 'api_hub' },
+    { name: t('api_hub'), key: 'hub' },
   ];
 
   return (

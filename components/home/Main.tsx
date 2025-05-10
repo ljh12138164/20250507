@@ -1,6 +1,7 @@
 'use client';
 
 import { Loader2 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { PDFDocument, degrees } from 'pdf-lib';
 import { useRef, useState } from 'react';
 import { FiRefreshCw } from 'react-icons/fi';
@@ -13,7 +14,6 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import Render from '../Render';
 import { Button } from '../ui/button';
-import { useTranslations } from 'next-intl';
 import {
   Tooltip,
   TooltipContent,
@@ -155,6 +155,7 @@ export default function RotatePDF() {
     }
   };
 
+  // 下载
   const handleDownload = async () => {
     if (!pdfFile) return;
     const pdfDoc = await PDFDocument.load(await pdfFile.arrayBuffer());
@@ -166,6 +167,7 @@ export default function RotatePDF() {
       }
     });
     const pdfBytes = await pdfDoc.save();
+    // @ts-expect-error 创建一个Blob对象,
     const blob = new Blob([pdfBytes], { type: 'application/pdf' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
